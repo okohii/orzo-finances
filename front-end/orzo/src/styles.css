@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --bg-color: #fdfcf9;
+  --text-color: #3b322c;
+  --primary-color: #8c5e3c;
+  --accent-color: #a6c48a;
+  --muted-color: #e6e0d4;
+  --border-color: #d9c8b4;
+  --button-background: #a6c48a;
+  font-family: 'Sen', sans-serif;
+}
+
+[data-theme="dark"] {
+  --bg-color: #0e0e1b;
+  --text-color: #e0e0f0;
+  --primary-color: #ff2d95;
+  --accent-color: #00ffc6;
+  --muted-color: #1c1c2b;
+  --border-color: #31314f;
+  --button-background: #ff2d95;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
