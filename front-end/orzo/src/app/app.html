@@ -1,7 +1,16 @@
-<div class="container">
+<div class="h-full px-2">
+  <div class="flex h-full justify-end">
+    <button
+      (click)="alternarTema()"
+      class="flex items-center justify-center align-middle border-1-solid border-border rounded-md"
+    >
+      <mat-icon>
+        @if (temaAtual() === 'light') { dark_mode } @else { light_mode }
+      </mat-icon>
+    </button>
+  </div>
   <h1>🌗 Sistema de Tema Dinâmico</h1>
   <p>O tema atual é: {{ temaAtual() }}</p>
-  <button (click)="alternarTema()">Alternar Tema</button>
 </div>
 
 <router-outlet />

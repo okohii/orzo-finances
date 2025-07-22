@@ -1,32 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #fdfcf9;
+  --color-text: #3b322c;
+  --color-primary: #8c5e3c;
+  --color-accent: #a6c48a;
+  --color-muted: #e6e0d4;
+  --color-border: #d9c8b4;
+  --color-button-background: #a6c48a;
+}
 
 :root {
-  --bg-color: #fdfcf9;
-  --text-color: #3b322c;
-  --primary-color: #8c5e3c;
-  --accent-color: #a6c48a;
-  --muted-color: #e6e0d4;
-  --border-color: #d9c8b4;
-  --button-background: #a6c48a;
-  font-family: 'Sen', sans-serif;
+    font-family: 'Sen', sans-serif;
 }
 
 [data-theme="dark"] {
-  --bg-color: #0e0e1b;
-  --text-color: #e0e0f0;
-  --primary-color: #ff2d95;
-  --accent-color: #00ffc6;
-  --muted-color: #1c1c2b;
-  --border-color: #31314f;
-  --button-background: #ff2d95;
-  font-family: 'Space Grotesk', sans-serif;
+  --color-bg: #0e0e1b;
+  --color-text: #e0e0f0;
+  --color-primary: #ff2d95;
+  --color-accent: #00ffc6;
+  --color-muted: #1c1c2b;
+  --color-border: #31314f;
+  --color-button-background: #ff2d95;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
-
