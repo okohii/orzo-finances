@@ -1,14 +1,26 @@
 <nav [class]="isExpanded ? 'expanded' : 'collapsed'">
   <div class="nav-content">
-    <button 
-      class="toggle-btn" 
+    <button
+      class="toggle-btn"
       (click)="toggleSidebar()"
-      [attr.aria-label]="isExpanded ? 'Recolher menu' : 'Expandir menu'">
-      <span class="toggle-icon">{{ isExpanded ? '←' : '→' }}</span>
+      [attr.aria-label]="isExpanded ? 'Recolher menu' : 'Expandir menu'"
+    >
+      <span class="toggle-icon">{{ isExpanded ? "←" : "→" }}</span>
     </button>
-    
+
     <div class="nav-items" [class.hidden]="!isExpanded">
-        <app-theme-button></app-theme-button>
+      <div class="links mb-2">
+        <a routerLink="/" class="nav-link" [routerLinkActive]="['active']">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="home"
+          ></mat-icon>
+          <span class="nav-text ml-2 pl-2 border-l-1 border-text">Início</span>
+        </a>
+      </div>
+
+      <app-theme-button></app-theme-button>
     </div>
   </div>
 </nav>
