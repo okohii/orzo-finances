@@ -1,0 +1,8 @@
+<button
+    (click)="alternarTema()"
+    class="flex items-center justify-center align-middle border-1-solid border-border rounded-md"
+>
+    <mat-icon>
+    @if (temaAtual() === 'light') { dark_mode } @else { light_mode }
+    </mat-icon>
+</button>

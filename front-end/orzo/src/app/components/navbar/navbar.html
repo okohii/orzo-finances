@@ -1,1 +1,14 @@
-<p>navbar works!</p>
+<nav [class]="isExpanded ? 'expanded' : 'collapsed'">
+  <div class="nav-content">
+    <button 
+      class="toggle-btn" 
+      (click)="toggleSidebar()"
+      [attr.aria-label]="isExpanded ? 'Recolher menu' : 'Expandir menu'">
+      <span class="toggle-icon">{{ isExpanded ? '←' : '→' }}</span>
+    </button>
+    
+    <div class="nav-items" [class.hidden]="!isExpanded">
+        <app-theme-button></app-theme-button>
+    </div>
+  </div>
+</nav>
