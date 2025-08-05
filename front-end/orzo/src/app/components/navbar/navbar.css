@@ -52,8 +52,10 @@ nav.collapsed {
   border-radius: 0.375rem;
   background-color: var(--color-button-background);
   transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .nav-link:hover {
   background-color: transparent;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.08);
 }
