@@ -1,1 +1,35 @@
-<p>home works!</p>
+<div class="mt-4">
+  <h1 class="text-2xl font-bold">Dashboard</h1>
+
+  <div
+    class="graphics p-4 w-full h-full flex flex-row gap-8 justify-between flex-wrap"
+  >
+    <div class="graphic-item p-4 rounded shadow mb-4 bg-button-background">
+      <h2 class="text-xl font-semibold mb-4">Gráfico de Transações</h2>
+      <app-general-graphic [data]="transactionData" [config]="barChartConfig">
+      </app-general-graphic>
+    </div>
+
+    <div class="graphic-item p-4 rounded shadow mb-4 bg-button-background">
+      <h2 class="text-xl font-semibold mb-4">Gráfico de Despesas</h2>
+      <app-general-graphic [data]="expenseData" [config]="pieChartConfig">
+      </app-general-graphic>
+    </div>
+
+    <div class="graphic-item p-4 rounded shadow mb-4 bg-button-background">
+      <h2 class="text-xl font-semibold mb-4">Gráfico de Receitas</h2>
+      <app-general-graphic [data]="revenueData" [config]="lineChartConfig">
+      </app-general-graphic>
+    </div>
+
+    <div class="graphic-item p-4 rounded shadow mb-4 bg-button-background">
+      <h2 class="text-xl font-semibold">Gráfico de Lucros</h2>
+      <p>Este é o gráfico de lucros.</p>
+    </div>
+
+    <div class="graphic-item p-4 rounded shadow mb-4 bg-button-background">
+      <h2 class="text-xl font-semibold">Gráfico de Saldo</h2>
+      <p>Este é o gráfico de saldo.</p>
+    </div>
+  </div>
+</div>
