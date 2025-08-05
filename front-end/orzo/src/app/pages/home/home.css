@@ -1,0 +1,35 @@
+.graphics {
+  background: linear-gradient(
+    135deg,
+    var(--color-bg) 0%,
+    var(--color-muted) 100%
+  );
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.graphic-item {
+  background: var(--color-bg);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--color-border);
+  min-width: 350px;
+  flex: 1;
+}
+
+.graphic-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.graphic-item h2 {
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+[data-theme="dark"] .graphic-item:hover {
+  box-shadow: 0 20px 40px rgba(255, 45, 149, 0.1),
+    0 8px 16px rgba(0, 255, 198, 0.05);
+}
