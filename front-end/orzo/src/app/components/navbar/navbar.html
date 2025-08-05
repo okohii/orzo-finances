@@ -1,5 +1,5 @@
-<nav [class]="isExpanded ? 'expanded' : 'collapsed'">
-  <div class="nav-content">
+<nav [class]="isExpanded ? 'expanded' : 'collapsed' " class="min-h-[100vh] bg-muted b-r-1 border-border transition-all duration-300 ease-in-out overflow-hidden">
+  <div class="nav-content p-4 h-full">
     <button
       class="toggle-btn"
       (click)="toggleSidebar()"
@@ -8,7 +8,7 @@
       <span class="toggle-icon">{{ isExpanded ? "←" : "→" }}</span>
     </button>
 
-    <div class="nav-items" [class.hidden]="!isExpanded">
+    <div class="nav-items" [ngClass]="navItemsClass">
       <div class="links mb-2">
         <a routerLink="/" class="nav-link" [routerLinkActive]="['active']">
           <mat-icon
